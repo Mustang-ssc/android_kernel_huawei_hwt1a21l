@@ -1,0 +1,19 @@
+/* < DTS2014121706484  liyu 20141217 begin */
+/ {
+    huawei_audio_info {
+        compatible = "huawei,hw_audio_info";
+        product-identifier = "c8818";
+        builtin-master-mic-exist;
+        builtin-2nd-mic-exist;
+        hand_held_dual_mic_strategy;
+        status = "ok";
+        loud_speaker_second_mic_strategy;
+        product-btsco-nrec-adapt;
+    };
+};
+&soc {
+    sound {
+        qcom,msm-micbias1-ext-cap;
+    };
+};
+/* DTS2014121706484 liyu 20141217 end > */

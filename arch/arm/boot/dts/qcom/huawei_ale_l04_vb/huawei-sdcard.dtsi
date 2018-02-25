@@ -1,0 +1,20 @@
+/* < DTS2015011002343 liyu 20150112 begin */
+&soc {
+        huawei,huawei-polling-support {
+                compatible = "huawei-polling-support";
+                huawei,support-polling;
+        };
+     };
+
+&sdc2_cd_on {
+        /delete-property/ bias-pull-up;
+        /delete-property/ bias-disable;
+        bias-pull-down;
+};
+
+&sdc2_cd_off {
+        /delete-property/ bias-pull-up;
+        /delete-property/ bias-disable;
+        bias-pull-down;
+};
+/* DTS2015011002343 liyu 20150112 end > */

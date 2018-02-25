@@ -1,0 +1,11 @@
+Image
+zImage
+xipImage
+bootpImage
+uImage
+*.dtb
+zImage-dtb
+#/* < DTS2014042500432 zhaoyuxia 20140225 begin */
+dts/qcom/*/hw-panel-*.dtsi
+dts/qcom/*/huawei-lcd.dtsi
+#/* DTS2014042500432 zhaoyuxia 20140225 end > */

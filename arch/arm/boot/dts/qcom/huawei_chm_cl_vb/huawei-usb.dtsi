@@ -1,0 +1,12 @@
+/* < DTS2014122301726 liyu 20141223 begin */
+/*DTS2015011206855 shangzhi 20150112 begin*/
+&usb_otg {
+	qcom,hsusb-otg-mode = <3>;
+	qcom,usbotg-chargeic-bq24152 = <1>;
+	qcom,usbid-gpio = <&msm_gpio 117 0>; 
+	qcom,usbotg-enable = <&msm_gpio 116 0>;
+	pinctrl-names = "default"; 
+	pinctrl-0 = <&usbid_default &usbotg_default>;
+};
+/*DTS2015011206855 shangzhi 20150112 end*/
+/* DTS2014122301726 liyu 20141223 end > */

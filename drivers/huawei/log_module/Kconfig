@@ -1,0 +1,10 @@
+#/* < DTS2014060603241 chenjikun 20140610 add >*/
+menu HUAWEI_LOG_MODULE
+
+config  HUAWEI_LOG_MODULE
+        default n
+	bool "huawei log module"
+	help
+          huawei log module control
+
+endmenu

@@ -1,0 +1,8 @@
+/* < DTS2014090505039 zhujie 20140905 begin */
+&soc {
+        huawei,huawei-polling-support {
+                compatible = "huawei-polling-support";
+                huawei,support-polling;
+        };
+     };
+/* DTS2014090505039 zhujie 20140905 end > */

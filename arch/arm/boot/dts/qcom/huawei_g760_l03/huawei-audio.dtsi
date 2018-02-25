@@ -1,0 +1,34 @@
+/* < DTS2014041806002 yangxiaocong 20140418 begin */
+/* < DTS2014042815092 liufuhou 20140428 begin */
+/* < DTS2014050404951 menglingchao 20140504 begin */
+/* < DTS2013080804880 lishubin 20130808 begin */
+/* < DTS2014070305061 lishubin 20140708 begin */
+/* < DTS2014080402906 matiantian 20140805 begin */
+/* < DTS2014080801565 yangxiaocong 20140808 begin */
+/* < DTS2014081306119 jiangchenghu 20140903 begin */
+/ {
+    huawei_audio_info {
+        compatible = "huawei,hw_audio_info";
+        product-identifier = "g760_l01";
+        builtin-master-mic-exist;
+        builtin-2nd-mic-exist;
+        hand_held_dual_mic_strategy;
+        status = "ok";
+        aud_param_ver = "g760_l01_audio_B01";
+        loud_speaker_master_mic_strategy;
+        product-btsco-nrec-adapt;
+    };
+};
+&soc {
+    sound {
+        qcom,msm-micbias1-ext-cap;
+    };
+};
+/* DTS2014081306119 jiangchenghu 20140903 end > */
+/* DTS2014080801565 yangxiaocong 20140808 end > */
+/* DTS2014080402906 matiantian 20140805 end > */
+/* DTS2014070305061 lishubin 20140708 end > */
+/* DTS2013080804880 lishubin 20130808 end > */
+/* DTS2014050404951 menglingchao 20140504 end > */
+/* DTS2014042815092 liufuhou 20140428 end > */
+/* DTS2014041806002 yangxiaocong 20140418 end > */

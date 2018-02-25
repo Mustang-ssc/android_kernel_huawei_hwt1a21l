@@ -1,0 +1,5 @@
+#/* < DTS2014102104433 liwei 20141021 begin */
+config CPU_STRESS_TEST
+	bool "CPU stress test support"
+	default n
+#/* DTS2014102104433 liwei 20141021 end > */

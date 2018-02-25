@@ -1,0 +1,10 @@
+/* < DTS2014111203130 tanyanying 20141113 begin */
+/* < DTS2014120204179 liyu 20141202 begin */
+&soc {
+        huawei,huawei-mem-hole {
+                compatible = "huawei,huawei-mem-hole";
+                huawei,memblock-remove-huawei = <0x9FF00000 0x100000>;
+        };
+     };
+/* DTS2014120204179 liyu 20141202 end > */
+/* DTS2014111203130 tanyanying 20141113 end > */

@@ -1,0 +1,10 @@
+/* < DTS2014060906629 wanghui 20140609 begin */
+&usb_otg {
+	qcom,hsusb-otg-mode = <3>;
+	qcom,usbid-gpio = <&msm_gpio 117 0>; 
+	pinctrl-names = "default"; 
+	pinctrl-0 = <&usbid_default>;
+
+};
+
+/* DTS2014060906629 wanghui 20140609 end > */

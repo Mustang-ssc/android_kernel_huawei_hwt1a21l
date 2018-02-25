@@ -1,0 +1,13 @@
+/* <DTS2014102204192 wWX239977 20141022 begin */
+/* < DTS2015010402454 lwx247446 20150104 begin */
+/ {
+        huawei_fac_info {
+                  compatible = "huawei,hw_fac_info";
+                  fac,product_name = "T1 10";
+                  fac,hardware_ver = "SH0T1A21LM_VERA";
+                  fac,software_ver = "T1-A21LT";
+                  status = "ok";
+        };
+};
+/* DTS2015010402454 lwx247446 20150104 end > */
+/* DTS2014102204192 wWX239977 20141022 end > */

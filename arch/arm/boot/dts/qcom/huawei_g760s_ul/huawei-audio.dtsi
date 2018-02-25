@@ -1,0 +1,27 @@
+/* < DTS2014090505039 zhujie 20140905 begin */
+/* < DTS2014080605241 yangjingwen 20140806 begin */
+/* < DTS2014091509226 wangzefan/wx224779 20140916 begin */
+/* < DTS2014072504431 caiying/00214377 20140918 begin */
+/* < DTS2014081306119 jiangchenghu 20140903 begin */
+/ {
+    huawei_audio_info {
+        compatible = "huawei,hw_audio_info";
+        product-identifier = "g760s_cl";
+        builtin-master-mic-exist;
+        builtin-2nd-mic-exist;
+        hand_held_dual_mic_strategy;
+        status = "ok";
+        loud_speaker_master_mic_strategy;
+        product-btsco-nrec-adapt;
+    };
+};
+&soc {
+    sound {
+        qcom,msm-micbias1-ext-cap;
+    };
+};
+/* DTS2014081306119 jiangchenghu 20140903 end > */
+/* DTS2014072504431 caiying/00214377 20140918 end > */
+/* DTS2014091509226 wangzefan/wx224779 20140916 end > */
+/* DTS2014080605241 yangjingwen 20140806 end > */
+/* DTS2014090505039 zhujie 20140905 end > */

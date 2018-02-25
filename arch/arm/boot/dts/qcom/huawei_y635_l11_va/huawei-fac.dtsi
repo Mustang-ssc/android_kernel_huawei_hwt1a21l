@@ -1,0 +1,11 @@
+/* < DTS2014101407079 tanyanying 20141014 begin */
+ / {
+        huawei_fac_info {
+                  compatible = "huawei,hw_fac_info";
+                  fac,product_name = "HUAWEI Y635-L11";
+                  fac,hardware_ver = "HL1Y635ULTM";
+                  fac,software_ver = "MSM8916_Y635-L11_VA";
+                  status = "ok";
+        };
+};
+/* DTS2014101407079 tanyanying 20141014 end > */

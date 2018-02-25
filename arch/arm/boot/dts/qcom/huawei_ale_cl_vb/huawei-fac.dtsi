@@ -1,0 +1,11 @@
+/* < DTS2015011002343 liyu 20150112 begin */
+ / {
+        huawei_fac_info {
+                  compatible = "huawei,hw_fac_info";
+                  fac,product_name = "HUAWEI ALE-CL00";
+                  fac,hardware_ver = "HL4ALICETM";
+                  fac,software_ver = "MSM8939_ALE-CL00_VB";
+                  status = "ok";
+        };
+};
+/* DTS2015011002343 liyu 20150112 end > */

@@ -1,0 +1,28 @@
+#/* < DTS2014041705903 zhangmin 20140418 begin */
+
+#
+# Near Field Communication (NFC) devices
+#
+
+config HUAWEI_HW_DEV_DCT
+	depends on HUAWEI_KERNEL
+	default n
+	bool "HUAWEI DEVICE DETECT"
+	help
+		Say yes if you want i2c device detect driver.
+		This is for i2c connected version. If unsure, say N here.
+
+#/* DTS2014041705903 zhangmin 20140418 end > */
+#/*<DTS2014120404594 zhanglei wx200260 20141204 begin */
+#/* begin DTS2014070706478 for sim detect by c00217097 2014/7/7  */
+
+config HUAWEI_HW_SIM_DETECT
+	depends on HUAWEI_KERNEL
+	default n
+	bool "HUAWEI SIM DEVICE DETECT"
+	help
+		Say yes if you want sim device detect driver.
+		This is for sim plugin version. If unsure, say N here.
+		
+#/* End DTS2014070706478 for sim detect by c00217097  2014/7/7  */
+#/*DTS2014120404594 zhanglei wx200260 20141204 end> */		

@@ -1,0 +1,8 @@
+#/* < DTS2013080201182 wuzhihui 20130802 begin */
+config HUAWEI_APANIC
+	tristate "dump panic info"
+	depends on HUAWEI_KERNEL
+	default n
+	help
+	  Say Y here to enable huawei panic info dump
+#/* DTS2013080201182 wuzhihui 20130802 end > */
