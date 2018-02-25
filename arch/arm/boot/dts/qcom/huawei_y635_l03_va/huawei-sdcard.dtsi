@@ -1,0 +1,8 @@
+/* < DTS2014110303279 yuanxiaofeng 20141103 begin */
+&soc {
+        huawei,huawei-gpio-info {
+                compatible = "huawei-gpio-info";
+                huawei,voltage-active-low;
+        };
+     };
+/* DTS2014110303279 yuanxiaofeng 20141103 end > */

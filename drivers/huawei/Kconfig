@@ -1,0 +1,11 @@
+#/* < DTS2014060603241 chenjikun 20140610 add >*/
+menu "huawei linux device driver support package"
+source "drivers/huawei/log_module/Kconfig"
+#Begin DTS2014072507555 c00278899 201407226 Add equip driver
+source "drivers/huawei/equip/Kconfig"
+#End DTS2014072507555  c00278899 20140726 Add equip driver
+
+#/* < DTS2014082110037 chenqihang 20140821 begin */
+source "drivers/huawei/store_exception/Kconfig"
+#/* DTS2014082110037 chenqihang 20140821 end> */
+endmenu

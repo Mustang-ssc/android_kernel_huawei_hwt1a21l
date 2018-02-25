@@ -1,0 +1,22 @@
+/* < DTS2014092405372 gwx199358 20140924 begin */
+#ifndef __HUAWEI_BOADID_H__
+#define __HUAWEI_BOADID_H__
+
+/*<DTS2015010402454 xiongxi xwx234328 20150104 begin*/
+#define BOARDID_T1_10 8000
+#define BOARDID_T1_A24L 8001
+#define BOARDID_T1_A21L 8065
+#define BOARDID_T1_A21LT 8052
+#define BOARDID_T1_A21W 8017
+#define BOARDID_T1_A22L 8033
+#define BOARDID_T1_A23L 8049
+/*DTS2015010402454 xiongxi xwx234328 20150104 end>*/
+
+
+#define CBLPWR_USBIN_ADDR       0x00000810
+#define CBLPWR_USBIN_VALID_IRQ  BIT(2)
+
+extern int huawei_get_cblpwr_irq_no(void);
+
+#endif /* __HUAWEI_BOADID_H__ */
+/* DTS2014092405372 gwx199358 20140924 end > */

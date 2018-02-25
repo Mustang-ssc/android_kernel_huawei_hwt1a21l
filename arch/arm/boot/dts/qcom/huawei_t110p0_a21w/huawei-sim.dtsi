@@ -1,0 +1,14 @@
+/* <DTS2014102204192 wWX239977 20141022 begin */
+/ {
+        huawei_sim_info {
+                  compatible = "huawei,hw-sim-detect";
+                  status = "ok";
+                  qcom,sim-detect = <&msm_gpio 60 0>; 
+                  linux,name = "simgpio"; 
+                  pinctrl-names = "sim_default", "sim_sleep";
+                  pinctrl-0 = <&sim_default>;
+                  pinctrl-1 = <&sim_sleep>;
+                  linux,default-trigger = "simgpio-trigger"; 
+        };
+};
+/* DTS2014102204192 wWX239977 20141022 end > */

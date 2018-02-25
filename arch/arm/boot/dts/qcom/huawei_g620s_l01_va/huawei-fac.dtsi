@@ -1,0 +1,11 @@
+/* < DTS2014052908495 lixiuzhen lwx223743 begin */
+ / {
+        huawei_fac_info {
+                  compatible = "huawei,hw_fac_info";
+                  fac,product_name = "HUAWEI G620S-L01";
+                  fac,hardware_ver = "HL1G620SM";
+                  fac,software_ver = "MSM8916_G620S-L01_VA";
+                  status = "ok";
+        };
+};
+/*  DTS2014052908495 lixiuzhen lwx223743 end > */

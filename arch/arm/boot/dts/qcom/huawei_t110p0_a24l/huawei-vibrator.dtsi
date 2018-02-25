@@ -1,0 +1,16 @@
+/* < DTS2014091800127 l00133898 20140918 begin */
+&spmi_bus{
+	qcom,pm8916@1 {
+		pm8916_vib: qcom,vibrator@c000 {
+		compatible = "qcom,qpnp-vibrator";
+		qcom,vib-timeout-ms = <15000>;
+		/* <DTS2015011902846 cwx241705 20150119 begin */
+		qcom,vib-vtg-level-mV = <2700>;
+		/* DTS2015011902846 cwx241705 20150119 end > */
+		reg = <0xc000 0x100>;
+		label = "vibrator";
+		status = "ok";
+		};
+	};
+};
+/* DTS2014091800127 l00133898 20140918  end > */

@@ -1,0 +1,6 @@
+#/* < DTS2014021207582 xufeng 20140212 begin */
+config HUAWEI_KSTATE
+    tristate "Huawei Kernel State"
+    help
+        Huawei kernel state, please choose it.
+#/* DTS2014021207582 xufeng 20140212 end > */

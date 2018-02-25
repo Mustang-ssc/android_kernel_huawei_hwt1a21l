@@ -1,0 +1,22 @@
+/* <DTS2014102204192 wWX239977 20141022 begin */
+/ {
+    huawei_audio_info {
+        compatible = "huawei,hw_audio_info";
+        product-identifier = "t1_A2xl";
+        builtin-master-mic-exist;
+        hand_held_master_mic_strategy;
+        status = "ok";
+        aud_param_ver = "t1_A2xl_audio_A01";
+        loud_speaker_master_mic_strategy;
+        product-btsco-nrec-adapt;
+    };
+};
+&spmi_bus {
+    qcom,pm8916@1 {
+        pm8916_tombak_dig: msm8x16_wcd_codec@f000{
+            qcom,msm-boost-voltage = <5000>;
+            msm-pwm-mode;
+        };
+    };
+};
+/* DTS2014102204192 wWX239977 20141022 end > */

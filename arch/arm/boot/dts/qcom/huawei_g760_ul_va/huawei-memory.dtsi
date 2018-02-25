@@ -1,0 +1,10 @@
+/* < DTS2014061108969 roopesh 20140611 begin */
+/* < DTS2014041500980 renlipeng 20140419 begin */
+&soc {
+        huawei,huawei-mem-hole {
+                compatible = "huawei,huawei-mem-hole";
+                huawei,memblock-remove-huawei = <0x9FF00000 0x100000>;
+        };
+     };
+/*  DTS2014041500980 renlipeng 20140419 end > */
+/*  DTS2014061108969 roopesh 20140419 end > */

@@ -1,0 +1,21 @@
+/* < DTS2014120104445 guodongping 20141201 begin */
+/* < DTS2014111203130 tanyanying 20141113 begin */
+/ {
+    huawei_audio_info {
+        compatible = "huawei,hw_audio_info";
+        product-identifier = "alice_cl";
+        builtin-master-mic-exist;
+        builtin-2nd-mic-exist;
+        hand_held_dual_mic_strategy;
+        status = "ok";
+        loud_speaker_second_mic_strategy;
+        product-btsco-nrec-adapt;
+    };
+};
+&soc {
+    sound {
+        qcom,msm-micbias1-ext-cap;
+    };
+};
+/* DTS2014111203130 tanyanying 20141113 end > */
+/* < DTS2014120104445 guodongping 20141201 end */

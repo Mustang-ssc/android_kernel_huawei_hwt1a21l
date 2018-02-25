@@ -1,0 +1,29 @@
+/* < DTS2014041201607 yangxiaocong 20140412 begin */
+/* < DTS2014042815092 liufuhou 20140428 begin */
+/* < DTS2013080804880 lishubin 20130808 begin */
+/* < DTS2014061909338 lishubin 20140620 begin */
+/* < DTS2014063003260 matiantian 20140701 begin */
+/* < DTS2014071701189 yubin 20140717 begin */
+/* < DTS2014080500010 yubin 20140805 begin */
+/* < DTS2014081603080 matiantian 20140819 begin */
+/ {
+    huawei_audio_info {
+        compatible = "huawei,hw_audio_info";
+        product-identifier = "g620s_ul";
+        builtin-master-mic-exist;
+        builtin-2nd-mic-exist;
+        hand_held_dual_mic_strategy;
+        status = "ok";
+        aud_param_ver = "g620s_ul_audio_C02";
+        loud_speaker_master_mic_strategy;
+        product-btsco-nrec-adapt;
+    };
+};
+/* DTS2014081603080 matiantian 20140819 end > */
+/* DTS2014080500010 yubin 20140805 end > */
+/* DTS2014071701189 yubin 20140717 end > */
+/* DTS2014063003260 matiantian 20140701 end > */
+/* DTS2014061909338 lishubin 20140620 end > */
+/* DTS2013080804880 lishubin 20130808 end > */
+/* DTS2014042815092 liufuhou 20140428 end > */
+/* DTS2014041201607 yangxiaocong 20140412 end > */

@@ -1,0 +1,11 @@
+/* < DTS2014111904129 hwx239867 20141201 add begin */
+ / {
+        huawei_wifi_info {
+                  compatible = "huawei,hw_wifi_info";
+                  status = "ok";
+                   wifi,chiptype = "WIFI_QUALCOMM_WCN3660B";
+                  wifi,pubfile_id = "t110p0_a23l";
+                  wifi,fw_ver = "1.4.1.2";
+        };
+};
+/* < DTS2014111904129 hwx239867 20141201 add end */

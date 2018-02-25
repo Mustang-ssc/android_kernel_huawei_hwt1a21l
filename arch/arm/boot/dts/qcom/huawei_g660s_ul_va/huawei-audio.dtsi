@@ -1,0 +1,23 @@
+/* < DTS2014041806002 yangxiaocong 20140418 begin */
+/* < DTS2014042815092 liufuhou 20140428 begin */
+/* < DTS2014050404951 menglingchao 20140504 begin */
+/* < DTS2013080804880 lishubin 20130808 begin */
+/* < DTS2014061909338 lishubin 20140620 begin */
+/ {
+    huawei_audio_info {
+        compatible = "huawei,hw_audio_info";
+        product-identifier = "g621_tl";
+        builtin-master-mic-exist;
+        builtin-2nd-mic-exist;
+        hand_held_dual_mic_strategy;
+        status = "ok";
+        aud_param_ver = "g660s_ul_audio_A01";
+        loud_speaker_master_mic_strategy;
+        product-btsco-nrec-adapt;
+    };
+};
+/* DTS2014061909338 lishubin 20140620 end > */
+/* DTS2013080804880 lishubin 20130808 end > */
+/* DTS2014050404951 menglingchao 20140504 end > */
+/* DTS2014042815092 liufuhou 20140428 end > */
+/* DTS2014041806002 yangxiaocong 20140418 end > */

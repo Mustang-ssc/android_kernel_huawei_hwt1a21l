@@ -1,0 +1,16 @@
+/* < DTS2014101407079 tanyanying 20141014 begin */
+/* < DTS2014110609997 jiangchenghu 20141106 begin */
+/ {
+    huawei_audio_info {
+        compatible = "huawei,hw_audio_info";
+        product-identifier = "y630";
+        builtin-master-mic-exist;
+        hand_held_master_mic_strategy;
+        status = "ok";
+        aud_param_ver = "y630_audio_B01";
+        loud_speaker_master_mic_strategy;
+        product-btsco-nrec-adapt;
+    };
+};
+/* DTS2014110609997 jiangchenghu 20141106 end > */
+/* DTS2014101407079 tanyanying 20141014 end > */

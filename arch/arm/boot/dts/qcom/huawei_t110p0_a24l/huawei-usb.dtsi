@@ -1,0 +1,8 @@
+/* < DTS2014091800127 l00133898 20140918 begin */
+ &usb_otg {  
+       qcom,hsusb-otg-mode = <3>;  
+       qcom,usbid-gpio = <&msm_gpio 110 0>;   
+       pinctrl-names = "default";   
+       pinctrl-0 = <&usbid_default>; 
+};  
+/* DTS2014091800127 l00133898 20140918  end > */

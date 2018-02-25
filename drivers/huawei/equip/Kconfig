@@ -1,0 +1,11 @@
+#
+# equip driver configuration
+#
+
+#/*Begin <DTS2012120510674>  add by nielimin/00164272 for normalizing internal interface of AT command  2012/12/5*/
+config DEV_EQUIP
+	bool "equip driver"
+	default y
+	help
+	  Say Y to enable equip driver  
+#/*End <DTS2012120510674>  add by nielimin/00164272 for normalizing internal interface of AT command  2012/12/5*/

@@ -1,0 +1,10 @@
+/* < DTS2014102204192 wWX239977 20141022 begin */
+/ {
+        huawei_bt_info {
+                  compatible = "huawei,hw_bt_info";
+                  status = "ok";
+                  bt,fw_ver = "1.4.1.2";
+                  bt,chiptype = "BT_FM_QUALCOMM_WCN3620";
+        };
+};
+/* DTS2014102204192 wWX239977 20141022 end > */

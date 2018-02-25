@@ -1,0 +1,11 @@
+/* < DTS20141128USBOTG zhangfei 20141128 begin */
+/* < DTS2014111203130 tanyanying 20141113 begin */
+&usb_otg {
+	qcom,hsusb-otg-mode = <3>;
+	qcom,usbid-gpio = <&msm_gpio 117 0>; 
+	qcom,usbotg-enable = <&msm_gpio 116 0>;
+	pinctrl-names = "default"; 
+	pinctrl-0 = <&usbid_default &usbotg_default>;
+};
+/* DTS2014111203130 tanyanying 20141113 end > */
+/* DTS20141128USBOTG zhangfei 20141128 end > */

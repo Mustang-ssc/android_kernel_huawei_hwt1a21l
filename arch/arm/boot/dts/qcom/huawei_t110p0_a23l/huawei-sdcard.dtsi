@@ -1,0 +1,17 @@
+/* <DTS2014102702713 zhanglei 20141027 begin */
+/* <DTS2014102003002 zhanglei 20141020 begin */
+//Without SD card,VDD and VDD-IO no power,need use interrupt mode.follow Y550 config
+/* <DTS2014102204192 wWX239977 20141022 begin */
+&soc {
+        huawei,huawei-gpio-info {
+                compatible = "huawei-gpio-info";
+                huawei,voltage-active-low;
+        };
+};
+&sdhc_2 {
+        /*add for changing the order of vdd and vddio*/
+        huawei,power-off-no-card;
+};
+/* DTS2014102204192 wWX239977 20141022 end > */
+/* DTS2014102003002 zhanglei 20141020 end> */
+/* DTS2014102702713 zhanglei 20141027 end> */

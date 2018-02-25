@@ -1,0 +1,5 @@
+#/* < DTS2014062704895 zhaoyingchun 20140628 begin */
+obj-$(CONFIG_MMC_SWRM) += swrm.o
+swrm-objs:= swrm_main.o swrm_mmc_api.o
+#/* DTS2014062704895 zhaoyingchun 20140628 end > */
+

@@ -1,0 +1,13 @@
+/* < DTS2014041609079 liuzhefeng 20140417 begin */
+/* < DTS2014050404951 menglingchao 20140504 begin */
+ / {
+        huawei_fac_info {
+                  compatible = "huawei,hw_fac_info";
+                  fac,product_name = "HUAWEI G760-UL00";
+                  fac,hardware_ver = "HL0MSM8916MT0";
+                  fac,software_ver = "MSM8916_G760-UL00_VA";
+                  status = "ok";
+        };
+};
+/*  DTS2014050404951 menglingchao 20140504 end > */
+/*  DTS2014041609079 liuzhefeng 20140417 end > */

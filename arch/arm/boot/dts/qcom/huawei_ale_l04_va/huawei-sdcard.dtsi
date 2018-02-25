@@ -1,0 +1,24 @@
+/* < DTS2014111203130 tanyanying 20141113 begin */
+/* < DTS2014120204179 liyu 20141202 begin */
+&soc {
+        huawei,huawei-polling-support {
+                compatible = "huawei-polling-support";
+                huawei,support-polling;
+        };
+     };
+/* DTS2014111203130 tanyanying 20141113 end > */
+
+/*< DTS2014120304673 yuanxiaofeng 20141203 begin */
+&sdc2_cd_on {
+        /delete-property/ bias-pull-up;
+        /delete-property/ bias-disable;
+        bias-pull-down;
+};
+
+&sdc2_cd_off {
+        /delete-property/ bias-pull-up;
+        /delete-property/ bias-disable;
+        bias-pull-down;
+};
+/* DTS2014120304673 yuanxiaofeng 20141203 end > */
+/* DTS2014120204179 liyu 20141202 end > */

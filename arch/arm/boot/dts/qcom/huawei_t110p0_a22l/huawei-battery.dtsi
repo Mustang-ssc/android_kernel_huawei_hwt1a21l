@@ -1,0 +1,79 @@
+/* < DTS2014091800127 l00133898 20140918 begin */
+/ {
+        qrd_batterydata: qcom,battery-data {
+                qcom,rpull-up-kohm = <68>;
+                qcom,vref-batt-therm = <1800000>;
+                #include "HB3080G1EBC_GY_SWD-4v35-4650mah.dtsi"
+                #include "HB3080G1EBW_SONY_SWD-4v35-4650mah.dtsi"
+                #include "HB3080G1EBC_SANSUMG_SWD-4v35-4650mah.dtsi"
+        };
+};
+
+&pm8916_bms {
+        status = "ok";
+        qcom,low-voltage-threshold = <3250000>;
+        qcom,battery-data = <&qrd_batterydata>;
+};
+
+&pm8916_chg {
+        status = "okay";
+        qcom,vddmax-mv = <4350>;
+        qcom,vddsafe-mv = <4380>;
+        qcom,tchg-mins = <360>;
+	/*DTS2014091301574,begin:rm linear charger, 2014.9.30*/
+        qcom,use-other-charger-bq2419x;
+	/*DTS2014091301574,end:rm linear charger, 2014.9.30*/
+};
+
+&pm8916_mpps {
+	mpp@a300 {
+		qcom,mode = <4>; // QPNP_PIN_MODE_AIN
+		qcom,src-sel = <0>; // QPNP_PIN_SEL_FUNC_CONSTANT
+		qcom,ain-route = <3>; // QPNP_PIN_AIN_AMUX_CH8
+		qcom,master-en = <1>; // Enable features
+	};
+};
+
+&pm8916_vadc {
+	cpu_mpp_number = <19>;
+	pa_mpp_number = <54>;
+
+	chan@13 {
+		label = "mpp4_div1";
+		reg = <0x13>;
+		qcom,decimation = <0>; //512 sampling rate
+		qcom,pre-div-channel-scaling = <0>; //1:1 scaling
+		qcom,calibration-type = "absolute"; //Use 625mV & 1.25V reference voltage
+		qcom,scale-function = <10>; //convert raw adc code to voltage
+		qcom,hw-settle-time = <2>; //200us
+		qcom,fast-avg-setup = <0>; //with only one average measurement
+	};
+
+	chan@36 {
+		qcom,scale-function = <10>;
+	};
+};
+
+&i2c_4 {
+        bq2419x: bq2419x@6b {
+	    	compatible = "ti,bq2419x_charger";
+	    	reg = <0x6B>;
+                 gpio_cd = <&msm_gpio 2 0>;
+                 gpio_int = <&msm_gpio 62 0>;
+		/* DTS2014103001011 xiongxi xwx234328 begin*/
+                /* gpio_otg = <&msm_gpio 116 0>;*/
+		/* DTS2014103001011 xiongxi xwx234328 end*/
+		 /*DTS2014091301574,begin:rm linear charger, 2014.9.30*/
+                 max_charger_voltagemV = <4352>;
+		 /*DTS2014091301574,end:rm linear charger, 2014.9.30*/
+                 max_charger_currentmA = <2000>;
+                /* <DTS2014090900647 caiwei 20140909 begin */
+		/*DTS2014110607837 xiongxi xwx234328 begin*/
+		/*<DTS2014121908780 xiongxi xwx234328 20121223 begin*/
+                 max_cin_limit_currentmA = <1000>;
+		/*DTS2014121908780 xiongxi xwx234328 20121223 end>*/
+		/*DTS2014110607837 xiongxi xwx234328 end*/
+                /* DTS2014090900647 caiwei 20140909 end> */
+       };
+};
+/* DTS2014091800127 l00133898 20140918  end > */

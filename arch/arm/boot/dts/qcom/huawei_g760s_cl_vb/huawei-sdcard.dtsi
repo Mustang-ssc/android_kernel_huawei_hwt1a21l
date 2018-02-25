@@ -1,0 +1,22 @@
+/* < DTS2014090505039 zhujie 20140905 begin */
+&soc {
+        huawei,huawei-polling-support {
+                compatible = "huawei-polling-support";
+                huawei,support-polling;
+        };
+     };
+/* DTS2014090505039 zhujie 20140905 end > */
+
+/* < DTS2014111004910 zengwei 20141118 begin */
+&sdc2_cd_on {
+	/delete-property/ bias-pull-up;
+	/delete-property/ bias-disable;
+	bias-pull-down;
+};
+
+&sdc2_cd_off {
+	/delete-property/ bias-pull-up;
+	/delete-property/ bias-disable;
+	bias-pull-down;
+};
+/* DTS2014111004910 zengwei 20141118 end > */

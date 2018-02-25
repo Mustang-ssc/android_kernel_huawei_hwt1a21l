@@ -1,0 +1,15 @@
+/* < DTS2014040807389 zhangmin 20140408 begin */
+/* < DTS2014050404951 menglingchao 20140504 begin */
+/* < DTS2014071506696 chuguoliang 20140715 begin */
+ / {
+        huawei_wifi_info {
+                  compatible = "huawei,hw_wifi_info";
+                  status = "ok";
+                  wifi,chiptype = "WIFI_QUALCOMM_WCN3620";
+                  wifi,pubfile_id = "g760_l03";
+                  wifi,fw_ver = "1.4.1.2";
+        };
+};
+/* DTS2014071506696 chuguoliang 20140715 end > */
+/* DTS2014050404951 menglingchao 20140504 end > */
+/* DTS2014040807389 zhangmin 20140408 end > */

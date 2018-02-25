@@ -1,0 +1,15 @@
+/* < DTS2015010503895  xiewei 20150106 begin */
+/* < DTS2014111203130 tanyanying 20141113 begin */
+/* < DTS2014120204179 liyu 20141202 begin */
+ / {
+        huawei_wifi_info {
+                  compatible = "huawei,hw_wifi_info";
+                  status = "ok";
+                  wifi,chiptype = "WIFI_QUALCOMM_WCN3620";
+                  wifi,pubfile_id = "ALE-L04";
+                  wifi,fw_ver = "1.4.1.2";
+        };
+};
+/* < DTS2014120204179 liyu 20141202 begin */
+/* DTS2014111203130 tanyanying 20141113 end > */
+/* DTS2015010503895  xiewei 20150106 end > */

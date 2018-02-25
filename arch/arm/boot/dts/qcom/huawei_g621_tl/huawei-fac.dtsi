@@ -1,0 +1,21 @@
+/* < DTS2014072906612 lijulong  20140804 begin */
+/* < DTS2014042602179 zhanggong 20140426 begin */
+/* < DTS2014041609079 liuzhefeng 20140417 begin */
+/* < DTS2014071006577 chenjikun 20140710 begin */
+/* < DTS2014071506696 chuguoliang 20140715 begin */
+/* < DTS2014080606606 wangbo 20140811 begin */
+ / {
+        huawei_fac_info {
+                  compatible = "huawei,hw_fac_info";
+                  fac,product_name = "G621-TL00";
+                  fac,hardware_ver = "HL0MSM8916MT0";
+                  fac,software_ver = "MSM8916_G621-TL_VA";
+                  status = "ok";
+        };
+};
+/* DTS2014080606606 wangbo 20140811 end > */
+/* DTS2014071506696 chuguoliang 20140715 end > */
+/* DTS2014071006577 chenjikun 20140710 end > */
+/*  DTS2014041609079 liuzhefeng 20140417 end > */
+/*  DTS2014042602179 zhanggong 20140426 end > */
+/* DTS2014072906612 lijulong   20140804 end > */

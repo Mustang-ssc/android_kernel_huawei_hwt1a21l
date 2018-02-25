@@ -1,0 +1,21 @@
+/*<DTS2014120404594 zhanglei wx200260 20141204 begin */
+/* Begin DTS2014070706478 for sim detect by c00217097 2014/7/7  */
+/* <DTS2014102204192 wWX239977 20141022 begin */
+/* < DTS2014081410800 gwx199358 20140815 begin */
+/ {
+        huawei_sim_info {
+                  compatible = "huawei,hw-sim-detect";
+                  status = "ok";
+                  qcom,sim-detect = <&msm_gpio 60 0>; 
+                  linux,name = "simgpio"; 
+                  pinctrl-names = "sim_default", "sim_sleep";
+                  pinctrl-0 = <&sim_default>;
+                  pinctrl-1 = <&sim_sleep>;
+                  linux,default-trigger = "simgpio-trigger"; 
+        };
+};
+/* DTS2014081410800 gwx199358 20140815 end > */
+
+/* DTS2014102204192 wWX239977 20141022 end > */
+/* End DTS2014070706478 for sim detect by c00217097 2014/7/7  */
+/*DTS2014120404594 zhanglei wx200260 20141204 end>*/

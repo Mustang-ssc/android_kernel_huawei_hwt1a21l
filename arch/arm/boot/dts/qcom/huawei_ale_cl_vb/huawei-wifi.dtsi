@@ -1,0 +1,11 @@
+/* < DTS2015011002343 liyu 20150112 begin */
+ / {
+        huawei_wifi_info {
+                  compatible = "huawei,hw_wifi_info";
+                  status = "ok";
+                  wifi,chiptype = "WIFI_QUALCOMM_WCN3620";
+                  wifi,pubfile_id = "ALE-CL00";
+                  wifi,fw_ver = "1.4.1.2";
+        };
+};
+/* DTS2015011002343 liyu 20150112 end > */

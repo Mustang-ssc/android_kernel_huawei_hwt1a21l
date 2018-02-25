@@ -1,0 +1,17 @@
+/* < DTS2014120101150 zhangjian 20141201 begin */
+/* < DTS2014090505039 zhujie 20140905 begin */
+/* < DTS2014111004155 huangkai 20141110 begin */
+ / {
+        huawei_fac_info {
+                  compatible = "huawei,hw_fac_info";
+                  fac,product_name = "HUAWEI C199s";
+                  /* <DTS2014121107888 shukai/wx221430 20141211 begin */
+                  fac,hardware_ver = "HL2G760SCLM";
+                  /* DTS2014121107888 shukai/wx221430 20141211 end > */
+                  fac,software_ver = "MSM8939_C199s_VB";
+                  status = "ok";
+        };
+};
+/* DTS2014111004155 huangkai 20141110 end > */
+/* DTS2014090505039 zhujie 20140905 end > */
+/* < DTS2014120101150 zhangjian 20141201 begin */
